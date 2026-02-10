@@ -25,24 +25,28 @@ jobs:
       - name: Install Dependencies
         run: npm ci
 
+      - name: Run Unit Tests
+        run: npm run test
+
       - name: Build React and Electron
         run: |
           npm run build
           npm run build:electron
 
-      - name: Build Installer (Windows)
+      - name: Build Installer & Publish (Pre-release)
         run: npm run electron:build
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Create Release
-        uses: softprops/action-gh-release@v1
-        if: startsWith(github.ref, 'refs/tags/')
-        with:
-          files: |
-            release/${{ github.ref_name }}/*.exe
-            release/${{ github.ref_name }}/latest.yml
-          draft: false
-          prerelease: false
+      - name: Verify Release Assets
+        run: |
+          sleep 10
+          gh release view ${{ github.ref_name }} --json assets --jq ".assets | length" > asset_count.txt
+          $count = Get-Content asset_count.txt
+          if ($count -eq 0) {
+            Write-Error "No assets found in release ${{ github.ref_name }}"
+            exit 1
+          }
+          Write-Host "Success: $count assets found in release."
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
