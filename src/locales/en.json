@@ -1,0 +1,68 @@
+{
+  "app": {
+    "title": "StreamLink",
+    "description": "Advanced TikTok Live Automation Tool",
+    "version": "v{{version}} (Alpha)",
+    "copyright": "© {{year}} decryptable. All rights reserved."
+  },
+  "nav": {
+    "triggers": "Event Triggers",
+    "actions": "Action Macros",
+    "logs": "Activity Logs",
+    "settings": "System Settings"
+  },
+  "status": {
+    "online": "Connected",
+    "offline": "Disconnected",
+    "connecting": "Establishing Connection...",
+    "disconnecting": "Terminating Connection...",
+    "error": "Connection Error"
+  },
+  "connection": {
+    "placeholder": "Enter TikTok Username",
+    "connect": "Connect Stream",
+    "disconnect": "Disconnect Stream",
+    "connecting": "Connecting...",
+    "stopping": "Stopping..."
+  },
+  "room": {
+    "title": "Stream Statistics",
+    "info": "Room Information",
+    "viewers": "Live Viewers",
+    "likes": "Total Likes"
+  },
+  "settings": {
+    "general": "General Configuration",
+    "appearance": "Appearance & Theme",
+    "language": "Language Preference",
+    "system": "System Controls",
+    "about": "About StreamLink"
+  },
+  "theme": {
+    "label": "Interface Theme",
+    "light": "Light Mode",
+    "dark": "Dark Mode",
+    "system": "System Default"
+  },
+  "logging": {
+    "title": "Activity Logging",
+    "description": "Record all incoming events and automated actions to the log panel.",
+    "enable": "Enable Logging"
+  },
+  "overlay": {
+    "title": "Stream Overlay",
+    "description": "Configure the browser source for OBS/Streamlabs.",
+    "urlLabel": "Overlay Source URL",
+    "preview": "Open Preview Window",
+    "help": "Copy this URL into your streaming software as a Browser Source."
+  },
+  "about": {
+    "description": "StreamLink is a specialized streaming utility crafted to elevate viewer interaction on TikTok Live. Engineered with a focus on community engagement, it seamlessly bridges the gap between streamers and their audience through robust automation and real-time event handling.",
+    "opensource": "Commitment to Open Source",
+    "license": "This software is free and open-source. Commercial redistribution, sale, or profit-driven modification is strictly prohibited.",
+    "developer": "Developer",
+    "website": "Website",
+    "source": "Source Code",
+    "version": "Version"
+  }
+}

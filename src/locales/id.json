@@ -1,0 +1,68 @@
+{
+  "app": {
+    "title": "StreamLink",
+    "description": "Alat Otomasi Canggih untuk TikTok Live",
+    "version": "v{{version}} (Alpha)",
+    "copyright": "© {{year}} decryptable. Hak cipta dilindungi undang-undang."
+  },
+  "nav": {
+    "triggers": "Pemicu Event",
+    "actions": "Makro Aksi",
+    "logs": "Log Aktivitas",
+    "settings": "Pengaturan Sistem"
+  },
+  "status": {
+    "online": "Terhubung",
+    "offline": "Terputus",
+    "connecting": "Menghubungkan...",
+    "disconnecting": "Memutuskan Koneksi...",
+    "error": "Kesalahan Koneksi"
+  },
+  "connection": {
+    "placeholder": "Masukkan Username TikTok",
+    "connect": "Hubungkan Stream",
+    "disconnect": "Putuskan Stream",
+    "connecting": "Menghubungkan...",
+    "stopping": "Menghentikan..."
+  },
+  "room": {
+    "title": "Statistik Stream",
+    "info": "Info Ruangan",
+    "viewers": "Penonton Langsung",
+    "likes": "Total Suka"
+  },
+  "settings": {
+    "general": "Konfigurasi Umum",
+    "appearance": "Tampilan & Tema",
+    "language": "Preferensi Bahasa",
+    "system": "Kontrol Sistem",
+    "about": "Tentang StreamLink"
+  },
+  "theme": {
+    "label": "Tema Antarmuka",
+    "light": "Mode Terang",
+    "dark": "Mode Gelap",
+    "system": "Default Sistem"
+  },
+  "logging": {
+    "title": "Log Aktivitas",
+    "description": "Rekam semua event masuk dan aksi otomatis ke panel log.",
+    "enable": "Aktifkan Logging"
+  },
+  "overlay": {
+    "title": "Overlay Stream",
+    "description": "Konfigurasi sumber browser untuk OBS/Streamlabs.",
+    "urlLabel": "URL Sumber Overlay",
+    "preview": "Buka Jendela Pratinjau",
+    "help": "Salin URL ini ke perangkat lunak streaming Anda sebagai Browser Source."
+  },
+  "about": {
+    "description": "StreamLink adalah utilitas streaming khusus yang dirancang untuk meningkatkan interaksi penonton di TikTok Live. Dibangun dengan fokus pada keterlibatan komunitas, alat ini menjembatani streamer dan audiens mereka melalui otomasi canggih dan penanganan event waktu nyata.",
+    "opensource": "Komitmen Open Source",
+    "license": "Perangkat lunak ini gratis dan open-source. Redistribusi komersial, penjualan, atau modifikasi demi keuntungan dilarang keras.",
+    "developer": "Pengembang",
+    "website": "Situs Web",
+    "source": "Kode Sumber",
+    "version": "Versi"
+  }
+}
